@@ -1,0 +1,35 @@
+<hr>
+<div class="container">
+    <form #addForm="ngForm"  (ngSubmit)="addCandidate(addForm)">
+        <h2 class="text-center text-success">Add candidate</h2>
+        <hr>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="candidate name" [(ngModel)]="model.name" name="candidateName">
+        </div>
+
+        <div class="form-group text-center">
+                <button class="btn btn-success" type="submit"> Add</button>
+        </div>
+    </form>
+</div>
+<hr>
+
+<div class="container">
+    <table class="table table-striped table-hover">
+        <tbody>
+        <tr class="table-success">
+            <th colspan="2" >Candidates</th>
+        </tr>
+        <tr class="table-success">
+            <th>Name</th>
+            <th>Votes</th>
+        </tr>
+        <tr *ngFor="let candidate of candidates$ | async">
+            <td>{{candidate.name}}</td>
+            <td>{{candidate.votes}}</td>
+        </tr>
+    
+    </tbody>
+    </table>
+    
+    </div>

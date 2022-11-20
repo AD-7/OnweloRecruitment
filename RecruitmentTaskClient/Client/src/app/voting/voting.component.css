@@ -1,0 +1,44 @@
+#margin-left-30{
+    margin-left: 20px;
+}
+
+.moresize{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.moresize:hover{
+    background-color: white;
+    color: black;
+    border-width: 3px;
+    border-color: black;
+    
+}
+
+.moresize300{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    border-style: dashed;
+    border-color: green;
+    border-radius: 30px;
+    border-width: 3px;
+    
+}
+
+.moresize300:hover{
+    
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 30px;
+    border-width: 3px;
+   
+    
+}
+
+
+.margin-top-30{
+    margin-top: 30px;
+}
